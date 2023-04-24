@@ -79,7 +79,7 @@ const school = [
 const university = document.querySelector('.uni');
 
 school.forEach(uni => {
-    university.innerHTML += `<div>
+    university.innerHTML += `<div class="uni__list">
               <h2>
                 <img src="${uni.picture}" />
                 <b>${uni.name}</b>

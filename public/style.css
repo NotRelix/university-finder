@@ -4,13 +4,6 @@
   margin: 0;
 }
 
-hr {
-  padding: 0;
-  height: 5px;
-  border-color: rgb(255, 214, 138);
-  background-color: orange;
-}
-
 input {
   margin-top: 10px;
   padding: 10px;
@@ -80,7 +73,7 @@ button {
 .container__filter {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 300px;
   height: 500px;
   padding: 20px;
   margin: 0 40px;
@@ -100,39 +93,21 @@ button {
 }
 
 .uni {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   margin-bottom: 100px;
+  width: 1200px;
 }
 
 .uni__list {
-  display: flex;
-  width: 1200px;
-  margin-top: 30px;
-}
-
-/* .services-list div {
-  height: 400px;
-  width: auto;
-  flex: 1;
+  margin: 30px;
   padding: 30px;
-  text-align: center;
-  font-size: 13px;
-  font-weight: 300;
-  border-radius: 10px;
-  transition: background 0.5s, transform 0.5s;
   box-sizing: border-box;
   box-shadow: 1px 2px 3px 4px rgba(224, 224, 224, 0.4);
-  margin-right: 20px;
+  border-radius: 10px;
 }
 
-@media screen and (max-width:990px) {
-  .schools {flex-wrap: wrap;}
-  .services-list:first-child {flex-basis: 100%}
-}
-
-.services-list div h2 {
+/* .services-list div h2 {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;

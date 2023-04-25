@@ -12,26 +12,24 @@
 </head>
 
 <body>
-  <div class="nav">
+  <header class="nav">
     <div class="nav__user">
-      <a class="nav__btn"><strong>Create Account</strong></a>
-      <a class="nav__btn" href="Account Creation/login-page-index.html"><strong>Login</strong></a>
+      <a class="nav__user__link" href="#">Create Account</a>
+      <a class="nav__user__link" href="Account Creation/login-page-index.html">Login</a>
     </div>
-    <div class="head">
-      <div class="head__container">
-        <button class="head__btn"><strong>UniFi</strong></button>
-      </div>
-      <a class="head__btn">School Search</a>
-      <a class="head__btn">Resource</a>
-      <a class="head__btn">Services</a>
-    </div>
-  </div>
+    <nav class="navbar">
+      <button class="navbar__btn">UniFi</button>
+      <a class="navbar__link" href="#">School Search</a>
+      <a class="navbar__link" href="#">Resource</a>
+      <a class="navbar__link" href="#">Services</a>
+    </nav>
+  </header>
 
   <h1 class="sub-title">Find the Right University For YOU</h1>
 
   <div class="container">
     <div class="container__filter container__filter--sticky">
-      <input type="text" placeholder="Type something">
+      <input type="text" placeholder="Type something" />
 
       <datalist id="course-list">
         <option>Computer Science</option>
@@ -46,15 +44,14 @@
         <option>Summer</option>
       </datalist>
 
-      <input type="search" placeholder="Course" list="course-list">
-      <input type="search" placeholder="Degree" list="degree-list">
+      <input type="search" placeholder="Course" list="course-list" />
+      <input type="search" placeholder="Degree" list="degree-list" />
 
       <button class="container__btn">Search</button>
     </div>
 
     <!-- Universities -->
     <div class="uni"></div>
-
   </div>
 </body>
 

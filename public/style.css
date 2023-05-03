@@ -128,6 +128,13 @@ button:hover {
   border-radius: 10px;
 }
 
+.uni__img {
+  width: auto;
+  height: 100px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
 /* .services-list div h2 {
   font-size: 30px;
   font-weight: 500;
